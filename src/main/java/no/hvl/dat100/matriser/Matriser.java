@@ -5,8 +5,15 @@ public class Matriser {
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		for (int i = 0; i < matrise.length; i++){
+
+            System.out.print(i + ": ");
+            for (int p = 0; p < matrise[i].length; p++){
+
+                System.out.print(matrise[i][p] + " ");
+            }
+            System.out.println();
+        }
 	}
 
 	// b)
