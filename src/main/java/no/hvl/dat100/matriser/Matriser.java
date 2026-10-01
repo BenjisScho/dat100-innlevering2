@@ -1,5 +1,7 @@
 package no.hvl.dat100.matriser;
 
+import java.util.Arrays;
+
 public class Matriser {
 
 	// a)
@@ -19,9 +21,13 @@ public class Matriser {
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
+		String output = "";
+
 		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-		
+		for (int i = 0; i < matrise.length; i++)  {
+			output += Arrays.toString(matrise[i]) + "\n";
+		}
+		return output;
 	}
 
 	// c)
