@@ -23,10 +23,14 @@ public class Matriser {
 
 		String output = "";
 
-		// TODO
-		for (int i = 0; i < matrise.length; i++)  {
-			output += Arrays.toString(matrise[i]) + "\n";
+		for (int i = 0; i < matrise.length; i++) {
+			String rowString = Arrays.toString(matrise[i]);
+
+			rowString = rowString.replace("[", "").replace("]", "").replace(",", "");
+
+			output += rowString + "\n";
 		}
+
 		return output;
 	}
 
